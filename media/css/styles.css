@@ -1,0 +1,46 @@
+
+@font-face {
+    font-family: 'HeavyCaps';
+    src: url('../fonts/uni-sans.heavy-caps\(1\)\ \(1\).otf') format('opentype');
+}
+@font-face {
+    font-family: 'ThinCaps';
+    src: url('../fonts/uni-sans.thin-caps\(1\)\ \(1\).otf') format('opentype'); }
+
+body {
+    background-image: url('../img/background.jpg');
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+#title {
+    font-family:"HeavyCaps";
+    text-align: center !important;
+    font-size: 75px;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    margin-bottom: 0%;
+    display:flex;
+
+}
+
+.bodycontainer {
+    width:inherit;
+    height: 150px;
+    text-align: center !important;
+    background-color: gray;
+    display:flex;
+    margin:0;
+    align-items: center;
+}
+
+
