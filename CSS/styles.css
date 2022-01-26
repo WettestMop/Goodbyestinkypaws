@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'HeavyCaps';
+    src: url('../Media/heavy\ \(1\).otf') format('opentype');
+}
+@font-face {
+    font-family: 'ThinCaps';
+    src: url('../Media/thin.otf') format('opentype');
+}
+
+
+#titleh1 {
+    font-family:"HeavyCaps";
+    font-size: 70px;
+    
+    
+}
+
+body {
+    background-image: url('../media/background1.png');
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+ul{
+            list-style-type: none;
+            margin-top: -10px;
+            padding: 0;
+            padding-left:650px;
+
+            background-color: #333;
+            overflow: hidden;
+        }
+        li{
+            text-align: center;
+            border-right: 1px solid #bbb;
+        }
+        li a{
+            display: block;
+            color: white;
+            font-family:"ThinCaps";
+            text-align: center;
+            padding: 19px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active){
+            background-color: #111;
+        }
+
+        .active{
+            background-color: #04AA6D;
+        }
+
+.thincaps{
+    font-family:"ThinCaps"
+}
+
+.heavycaps {
+    font-family: "HeavyCaps";
+}
+
+
