@@ -10,13 +10,30 @@
 
 #titleh1 {
     font-family:"HeavyCaps";
-    font-size: 70px;
+    font-size: 6vw;
+    
+    
+}
+
+@media (max-width: 960px) and (min-width: 501px) {
+    .press ul { width: 50%; } /* Show 2 logos per row on medium devices (tablets, phones in landscape) */
+}
+
+@media (max-width: 500px) {
+    .press ul { width: 100%; } /* On small screens, show one logo per row */
+}
+
+
+#subtitleh1 {
+    font-family:"HeavyCaps";
+    font-size: 6vw;
     
     
 }
 
 body {
-    background-image: url('../media/background1.png');
+    background-image: url('../media/background1.jpg');
+    background-size: 1920px 1080px;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -29,12 +46,23 @@ body {
                 opacity: 1;
             }
         }
+#captions {
+    color:black
+}
+
+#divcenter {
+    position: absolute;
+    padding: 10px;
+    }
+#captionswhite {
+    color:white;
+}
 
 ul{
             list-style-type: none;
             margin-top: -10px;
             padding: 0;
-            padding-left:650px;
+            padding-left:35%;
 
             background-color: #333;
             overflow: hidden;
